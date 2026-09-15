@@ -31,8 +31,20 @@ public class Calculos {
      * @param texto
      * @return cantidad de vocales
      */
-    int vocales(String texto) {
-        throw new UnsupportedOperationException("En construcción.");
+    int vocales(String palabra) {
+        int cantidad = 0;
+
+        for(int i=0; i<palabra.length(); i++) {
+            char letra = palabra.charAt(i);
+
+            if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u' ||
+            letra=='A' || letra=='E' || letra=='I' || letra=='O' || letra=='U')
+            cantidad++;
+    }
+
+    return cantidad;
+}
+
     }
 
     /**
